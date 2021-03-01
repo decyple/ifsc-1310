@@ -1,35 +1,69 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  
+  <head>
+    <!-- Declares the character set/encoding for the HTML document -->
+    <meta charset="utf-8">
+    <!-- The name of the page to be displayed in the tab bar -->
+    <title>IFSC 1310 | Mark McCorkle | Main</title>
+    <!-- A description of the webpage and/or contents -->
+    <meta name="description" content="Mark McCorkle's Landing Page" />
+    <!-- Author definition -->
+    <meta name="author" content="Mark McCorkle" />
+    <!-- Keywords, used extensively by google and other search engines, have faded out in popularity -->
+    <meta name="keywords" content="UALR, UA Little Rock, Information Science, IFSC, Web Technologies"/>
+    <link rel="stylesheet" href="./prototype/assets/css/colors.css">
+  </head>
 
-  <title>IFSC 1310 | Mark McCorkle</title>
-  <meta name="description" content="Mark McCorkle Landing Page" />
-  <meta name="author" content="Mark McCorkle" />
-
-</head>
-
-<body>
-  <h1>Mark McCorkle</h1>
-  <nav>
-      <ul>
-          <li><a href="prototype/index.html">Prototype Assignment</a></li>
-      </ul>
-  </nav>
-</body>
+  <body>
+    <div id="container">
+      
+      <header class="primary">
+        <h1>Mark McCorkle</h1>
+      </header><!-- #header -->
+      
+      <section id="content">
+        <h3 id="assignmentsheader">Assignments:</h3>
+        <header>
+          <nav>
+            <ul style="list-style-type:none;"><li><a href="prototype/index.html" id="assignments">Prototype HTML5 Assignment</a></li></ul>
+            <ul style="list-style-type:none;"><li><a href="" id="assignments_not_done1" onclick="clickAlert('assignments_not_done1')">Next Assignment</a></li></ul>
+            <ul style="list-style-type:none;"><li><a href="" id="assignments_not_done2" onclick="clickAlert('assignments_not_done2')">And the next...</a></li></ul>
+            <script>
+              function clickAlert(id) {
+                if(id == "assignments_not_done1"){
+                  document.getElementById("assignments_not_done1").style.color = "white";
+                  document.getElementById("assignments_not_done1").style.padding = 20;
+                  document.getElementById("assignments_not_done1").style.backgroundColor = "crimson";
+                } else if(id == "assignments_not_done2") {
+                  document.getElementById("assignments_not_done2").style.color = "white";
+                  document.getElementById("assignments_not_done2").style.padding = 20;
+                  document.getElementById("assignments_not_done2").style.backgroundColor = "crimson";
+                }
+              }
+            </script>
+          </nav><!-- #nav -->
+        </header><!-- #header -->
+      </section><!-- #content -->
+      
+      <nav id="nav" class="primary">Navigation:
+        <ul>
+          <li><a href="index.html" title="You are already home!">Home</a></li>
+          <li><a href="about.html" title="About this site">About</a></li>
+          <li><a href="https://ualr.edu/#news" target="_blank" title="UALR">UALR <img src="https://i.stack.imgur.com/ZsU8V.png" alt="Opens in new window" width="10" height="10"></a></li>
+          <li><a href="contact.html" title="Contact Information">Contact</a></li>
+        </ul>
+      </nav><!-- #nav -->
+      
+      <footer id="footer" class="primary">
+        <h6>Copyright 2021 Mark McCorkle &copy;&ensp; | &ensp;
+          <a href="mailto:mamccorkle@ualr.edu?subject=Important!&body=Mark,&enspthis&enspis&enspgreat&enspwork!.&ensp&#128540;" target="_blank">mamccorkle@ualr.edu</a>&ensp; | 
+          <a href="#top" style="text-decoration: none;">&ensp;&#128070;</a>&ensp; | &ensp;
+          <a href="index.html" style="text-decoration: none;">&ensp;&#127968;</a>
+        </h6>
+      </footer><!-- #footer -->
+    
+    </div><!-- #container -->
+  </body>
+  
 </html>
-
-
-<!--
-
-Git Commands:
-
-cd ifsc-1310/
-git status
-git add --all
-git status
-git commit -m "First Commit"
-git push
-
--->
