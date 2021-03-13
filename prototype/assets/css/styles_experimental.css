@@ -1,0 +1,29 @@
+
+
+/* Pseudo-Classes:                                              */
+/*--------------------------------------------------------------*/
+/**/
+
+  a:link { color: blue; }
+  a:visited { color: purple; }
+  
+
+/* Dynamic Pseudo-Classes:                                      */
+/*--------------------------------------------------------------*/
+/**/
+
+
+/* ID Selectors:                                                */
+/*   <div id="container">Content Goes Here....</div>            */
+/*--------------------------------------------------------------*/
+body 
+{
+    background: palegreen;
+}
+
+
+/* Class Selectors:                                             */
+/*   <header class="primary home">Content</header>              */
+/*--------------------------------------------------------------*/
+/**/
+

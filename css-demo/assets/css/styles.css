@@ -1,0 +1,286 @@
+/* --------------------- Box Sizing -----------------------  */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after { 
+    box-sizing: inherit;
+}
+
+/* --------------------- Responsive Images -----------------------  */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------------------- Utility Classes -----------------------  */
+
+.container {
+    width: 80vw;
+    margin: 40px auto;
+}
+
+
+/* --------------------- Global Styles -----------------------  */
+body {
+    
+    margin: 0;
+    font-family: 'Source Sans Pro', Geneva, sans-serif;
+    
+}
+
+header.primary {
+    
+    /* 
+    
+        Exotic Agate Color Scheme: 
+            #040416
+            #0E1C5E
+            #605B87
+            #974764
+            #B6251E
+    
+    */
+    background-color: #0E1C5E;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000; /* X, Y, Color */
+    
+    /* Long Type: */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+
+    /* Short Type (T,R,B,L): */
+    /*padding: 40px, 40px, 20px, 40px;*/
+    
+    /* Alt Method (T/B, R/L): */
+    /*padding: 20px, 40px;*/
+    
+}
+
+
+/* Video 20210308 */
+header.primary h1 {
+    
+    font-size: 3.2rem;
+    margin: 20px 0;
+    
+}
+
+
+/* HyperLink: */
+header.primary h1 a {
+    
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+
+header.primary h2 {
+    
+    font-size: 2rem;
+    /* T, L/R, B */
+    margin: 20px auto 40px;
+    
+}
+
+
+header.primary nav {
+    
+    width: 80vw;             /* Viewport Width (Percent): */
+    margin: 20px auto;
+    /*background-color: red;*/
+    max-width: 900px;        /* maximum width that it can take up: */
+    
+}
+
+
+header.primary nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50;
+}
+
+
+header.primary nav ul li {
+    
+    list-style-type: none;
+    
+}
+
+
+header.primary nav a:link, header.primary nav a:visited {
+    color: rgba( 255, 255, 255, 1.0 );
+    text-decoration: none;
+    background-color: black;
+    background-color: rgba( 0, 0, 0, 0.3 );
+    padding: 8px 16px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.5s;
+}
+
+
+header.primary nav a:hover, header.primary nav a: active {
+    background-color: rgba( 0, 0, 0, 0.6 );
+    transition: 0.5s;
+}
+
+
+/* "Introduction to Web Design" */
+#intro {
+    /* weight stroke color */
+    border-bottom: 1px dashed #c0c0c0;
+    padding-bottom: 1.5rem;
+    padding-top: 0.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    /*background-color: red;*/
+}
+
+
+#intro h2 {
+    color: #0E1C5E;
+    text-shadow: 8px 6px 10px rgba(96, 91, 135, 0.30); /*#605B87;*/
+}
+
+#intro p {
+    line-height: 1.5;
+}
+
+#content {
+    display: flex;
+    
+    
+    flex-direction: row;
+    justify-content: space-between;
+    
+    /* Shorthand version of above: */
+    /*flex-flow: row space-between;*/
+    
+    padding-bottom: 1.5rem;
+    
+    border-bottom: 1px dashed #c0c0c0;
+
+}
+
+#content article.post {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 0.9em;
+    
+}
+
+#content .post figure {
+    margin: 0;
+}
+
+#content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+
+#content article time, #content article figcaption, #conent article footer {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #c0c0c0;
+}
+
+#content article img {
+    border-radius: 4px;
+}
+
+#content article a:link, #content article a:visited {
+    color: #0E1C5E;
+}
+
+#content article a:hover, #content article a:active {
+    text-decoration: none;
+}
+
+/* Attribute Selector for class="widget"*/
+aside[role="complementary"] {
+    background-color: #0E1C5E;
+    color: #ffffff;
+    padding: 2.5rem;
+}
+
+/* Flexbox to make the sidebar items, side-by-side */
+aside .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside article.widget {
+    width: 40%;
+}
+
+aside a:link, aside a:visited {
+    color: white;
+    display: block;
+    margin-top: 20px;
+}
+
+aside footer {
+    display: none;
+}
+
+/* Media Query Example */
+@media screen and (max-width: 690px) {
+    
+    header.primary nav ul 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 auto;
+    }
+    
+    header.primary nav a {
+        display: block;
+    }
+    
+    header.primary nav li {
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
+/* Pseudo-Classes:                                              */
+/*--------------------------------------------------------------*/
+/**/
+
+
+/* Dynamic Pseudo-Classes:                                      */
+/*--------------------------------------------------------------*/
+/**/
+
+
+/* ID Selectors:                                                */
+/*   <div id="container">Content Goes Here....</div>            */
+/*--------------------------------------------------------------*/
+
+
+/* Class Selectors:                                             */
+/*   <header class="primary home">Content</header>              */
+/*--------------------------------------------------------------*/
+/**/
+
+
+/*
+body {
+    
+background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%232f2e2e' fill-opacity='0.26' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+}
+*/

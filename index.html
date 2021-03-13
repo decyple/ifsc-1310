@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <script src="prototype/assets/js/scripts.js"></script>
     <div id="container">
       
       <header class="primary">
@@ -26,9 +27,10 @@
         <h3 id="assignmentsheader">Assignments:</h3>
         <header>
           <nav>
-            <ul style="list-style-type:none;"><li><a href="prototype/index.html" id="assignments">Prototype HTML5 Assignment</a></li></ul>
-            <ul style="list-style-type:none;"><li><a href="" id="assignments_not_done1" onclick="clickAlert('assignments_not_done1')">Next Assignment</a></li></ul>
-            <ul style="list-style-type:none;"><li><a href="" id="assignments_not_done2" onclick="clickAlert('assignments_not_done2')">And the next...</a></li></ul>
+            <ul id="nav_assignments" style="list-style-type:none;"><li><a href="prototype/index.html" id="assignments">Prototype HTML5 Assignment</a></li></ul>
+            <ul id="nav_assignments" style="list-style-type:none;"><li><a href="css-demo/index.html" id="assignments">CSS Demo</a></li></ul>
+            <ul id="nav_assignments" style="list-style-type:none;"><li><a href="flexbox-froggy/index.html" id="assignments">Flexbox Froggy</a></li></ul>
+            <ul id="nav_assignments" style="list-style-type:none;"><li><a href="" id="assignments_not_done2" onclick="clickAlert('assignments_not_done2')">And the next...</a></li></ul>
             <script>
               function clickAlert(id) {
                 if(id == "assignments_not_done1"){
@@ -47,7 +49,7 @@
       </section><!-- #content -->
       
       <nav id="nav" class="primary">Navigation:
-        <ul>
+        <ul id="nav_links">
           <li><a href="index.html" title="You are already home!">Home</a></li>
           <li><a href="about.html" title="About this site">About</a></li>
           <li><a href="https://ualr.edu/#news" target="_blank" title="UALR">UALR <img src="https://i.stack.imgur.com/ZsU8V.png" alt="Opens in new window" width="10" height="10"></a></li>

@@ -1,191 +1,271 @@
-a:link { color: blue; }
-a:visited { color: purple; }
 
-
-#container {
-  width: 90vw;
-  margin: 80px auto;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3px;
-}
-
-
-#header {
-  display: flex;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 75px;
-  clear: both;
-  background: silver;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#picture {
-  display: block;
-  margin-left: 10%;
-  margin-right: auto;
-  width: 440px;
-  background: transparent;
-}
-
-
-#content {
-  margin-left: 15px;
-  width: 80%;
-  float: left;
-  padding-bottom: 25px;
-  background: whitesmoke;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-#nav {
-  padding-top: 10px;
-  position: fixed;
-  top: 96px;
-  right: 0;
-  width: 18%;
-  clear: both;
-  background: whitesmoke;
-  float: left;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-#footer {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 30px;
-  clear: both;
-  background: silver;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-#disclaimer {
-  margin-left: 15px;
-  width: 70vw;
-  float: left;
-  background: whitesmoke;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-#table {
-  padding-Top: 20px;
-  padding-Left: 20px;
-  background: transparent;
-  padding-Bottom: 20px;
-}
-
-
-#assignmentsheader {
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  width: 63vw;
-  float: left;
-  background: whitesmoke;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-#assignments {
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  width: 60vw;
-  float: left;
-  background: whitesmoke;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-#assignments_not_done1, #assignments_not_done2 {
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  width: 60vw;
-  float: left;
-  background: whitesmoke;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-body {
-  padding-bottom: 1550px;
-}
-
-
-html { 
-  background: url("https://djjvc.files.wordpress.com/2013/11/background-gr4.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-h1 {
-  float: left;
-  background: silver;
-  padding: 3px;
-  width: 81%;
-  border:1px solid #C0C0C0;
-}
-
-
-h2, h3 {
-  float: left;
-  background: silver;
-  padding: 3px;
-  width: 100%;
-  border:1px solid #C0C0C0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-h4 {
-  float: left;
-  background: gainsboro;
-  padding: 3px;
-  width: 100%;
-  border: 1px solid #C0C0C0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-h5 {
-  padding: 0px;
-  padding-left: 20px;
-  float: left;
-  background: whitesmoke;
+/* Pseudo-Classes:                                              */
+/*--------------------------------------------------------------*/
   
-}
+  a:link { color: blue; }
+  a:visited { color: purple; }
 
 
-p {
-  padding: 20px;
-  background: whitesmoke;
+/* Dynamic Pseudo-Classes:                                              */
+/*--------------------------------------------------------------*/
+  
+  /*li:hover {background-color: #99ccff;
+      backdrop-filter: blur(10px);
+  }*/
+  
+  
+  ul#nav_assignments > li:hover
+  { 
+    /*backdrop-filter: blur(8px);*/
+    filter: drop-shadow(8px 8px 12px #b3b3cc);
+    /*opacity: 0.7;*/
+    /*filter: blur(2px);*/
+    /*-webkit-filter: blur(8px);*/
+    background-color: #d1d1e0;
+  }
+  
+  
+  ul#nav_links > li:hover 
+  {
+    /*filter: drop-shadow(8px 8px 12px #8585ad);*/
+    background-color: #d1d1e0;
+    opacity: 0.4;
+  }
+  
+  /*input:focus {background-color: #99ccff}
+
+
+/* ID Selectors:                                                */
+/*   <div id="container">Content Goes Here....</div>            */
+/*--------------------------------------------------------------*/
+
+  #container 
+  {
+    width: 90vw;
+    margin: 80px auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+  }
+  
+  
+  #header 
+  {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    clear: both;
+    background: silver;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #picture 
+  {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 440px;
+    background: transparent;
+  }
+  
+  
+  #content 
+  {
+    margin-left: 15px;
+    width: 80%;
+    float: left;
+    padding-bottom: 25px;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  #nav 
+  {
+    padding-top: 10px;
+    position: fixed;
+    top: 96px;
+    right: 0;
+    width: 18%;
+    clear: both;
+    background: whitesmoke;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  #footer 
+  {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    clear: both;
+    background: silver;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  #disclaimer 
+  {
+    margin-left: 15px;
+    width: 70vw;
+    float: left;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  #table 
+  {
+    padding-Top: 20px;
+    padding-Left: 20px;
+    background: transparent;
+    padding-Bottom: 20px;
+  }
+  
+  
+  #assignmentsheader 
+  {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 63vw;
+    float: left;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  #assignments 
+  {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 60vw;
+    float: left;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  #assignments_not_done1, #assignments_not_done2 
+  {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 60vw;
+    float: left;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  body 
+  {
+    padding-bottom: 1550px;
+  }
+  
+  
+  html 
+  { 
+    background: url("https://djjvc.files.wordpress.com/2013/11/background-gr4.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  
+  h1 
+  {
+    float: left;
+    background: silver;
+    padding: 3px;
+    width: 81%;
+    border:1px solid #C0C0C0;
+  }
+  
+  
+  h2, h3 
+  {
+    float: left;
+    background: silver;
+    padding: 3px;
+    width: 100%;
+    border:1px solid #C0C0C0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  h4 
+  {
+    float: left;
+    background: gainsboro;
+    padding: 3px;
+    width: 100%;
+    border: 1px solid #C0C0C0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  h5 
+  {
+    padding: 0px;
+    padding-left: 20px;
+    float: left;
+    background: whitesmoke;
+    
+  }
+  
+  
+  p 
+  {
+    padding: 20px;
+    background: whitesmoke;
+  }
+  
+  
+/* Class Selectors:                                             */
+/*   <header class="primary home">Content</header>              */
+/*--------------------------------------------------------------*/
+
+/*
+  .cssclassname 
+  {
+    property:name;
+  }
+*/
+
+
+/* Specificity:                                                 */
+/*                                                              */
+/*--------------------------------------------------------------*/
+
+div#navigation a
+{
+  /* All links inside a div tag with the div having the ID of   */
+  /*   navigation:                                              */
+  color: #CCCCCC;
+  font-size: 16px;
 }
