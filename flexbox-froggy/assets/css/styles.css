@@ -22,12 +22,12 @@ html {
 
 
 body {
-    padding-bottom: 1500px;
+    /*padding-bottom: 1500px;*/
 }
 
 
 header.primary {
-    width: 97.25vw;
+    width: 100%;
     text-align: left;
     background: silver;
     color: #ffffff;
@@ -47,15 +47,12 @@ h1 {
 }
 
 .container {
-    width: 90vw;
+    width: 95%;
+    height: auto;
     margin: 80px auto;
     justify-content: center;
     align-items: center;
     padding-top: 3px;
-}
-
-post-meta {
-    
 }
 
 #avatar {
@@ -70,16 +67,25 @@ post-meta {
     background: rgba(33, 33, 33, 0.2);
 }
 
+#avatar:hover {
+    box-shadow: 0 4px 7px 0 rgba(255, 0, 0, 0.8), 0 2px 20px 0 rgba(0, 0, 0, 0.99);
+    transition: 0.5s;
+}
+
 #submission {
     margin: 15px 15px 15px 0px;
-    width: 75%;
+    width: auto;
+    height: 250px;
+    max-width: 65%;
     float: left;
     background: whitesmoke;
+    background: red;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 #funkyfunc {
-    padding: 15px 15px 15px 15px;
+    margin-left: 50px;
+    padding: 5px 5px 5px 5px;
     box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -90,7 +96,8 @@ post-meta {
     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
     border-radius: 10px;
     font-size: 0.9em;
-    padding-bottom: 13rem;
+    padding-bottom: 200px;
+    margin-bottom: 45px;
 }
 
 #content article.post:hover {
