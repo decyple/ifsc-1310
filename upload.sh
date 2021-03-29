@@ -18,6 +18,8 @@ if [[ $k = y ]] ; then
 	echo -e "\n\n\nAre you sure you want to push to GitHub? Press 'y' to continue or 'n' to exit"
 	read -n 1 k <&1
 
+	echo -e "\n"
+
 	if [[ $k = y ]] ; then
         	git push
 	else

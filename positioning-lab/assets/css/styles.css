@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+    background: url("https://djjvc.files.wordpress.com/2013/11/background-gr4.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+*,
+*:before,
+*:after { 
+    box-sizing: inherit;
+}
+
+/*
+a:link { color: blue; }
+a:visited { color: purple; }
+*/
+
+header.primary {
+    width: 100%;
+    text-align: left;
+    background: silver;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000; /* X, Y, Color */
+
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    
+    border:1px solid #C0C0C0;
+    
+}
+
+h1 {
+    padding-left: 100px;
+}
+
+section{
+    padding-top: 20px;
+}
+
+#content article.post {
+    padding: 10px;
+    background: whitesmoke;
+    width: 81%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    font-size: 0.9em;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+#content article.post:hover {
+    box-shadow: 0 16px 32px rgba(0,0,0,0.6);
+    transition: 0.5s;
+}
+
+#content article time, #content article figcaption, #conent article footer {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.6);
+}
+
+#content article figcaption {
+    padding-top: 15px;
+}
+
+#avatar {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 4px 7px 0 rgba(255, 0, 0, 0.4), 0 2px 20px 0 rgba(0, 0, 0, 0.99);
+    background: rgba(33, 33, 33, 0.2);
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#avatar:hover {
+    box-shadow: 0 4px 7px 0 rgba(255, 0, 0, 0.8), 0 2px 20px 0 rgba(0, 0, 0, 0.99);
+    transition: 0.5s;
+}
+
+ul#nav_assignments > li:hover { 
+    filter: drop-shadow(8px 8px 12px #b3b3cc);
+    background-color: #d1d1e0;
+}
+  
+ul#nav_links > li:hover {
+    /*filter: drop-shadow(8px 8px 12px #8585ad);*/
+    background-color: #d1d1e0;
+    opacity: 0.4;
+}
+
+#nav {
+    padding-top: 10px;
+    position: fixed;
+    top: 96px;
+    right: 0;
+    width: 18%;
+    clear: both;
+    background: whitesmoke;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    clear: both;
+    background: silver;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
