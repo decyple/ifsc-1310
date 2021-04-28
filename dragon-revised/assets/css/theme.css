@@ -1,0 +1,594 @@
+/* ----- Logo ----- */
+
+        #logo a {
+            background-image:url('../img/wflogo-padding.png') ;
+            min-height:0;
+            height:80px !important;
+        }
+
+
+/* IE6 png Support */
+        * html #logo a {
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/wflogo-padding.png", sizingMethod="crop");
+        }
+
+/* ----- Backgrounds ----- */
+        html{
+            background-image:none;	background-color:transparent;
+        }
+
+        #logo{
+            background-image:none;	background-color:transparent;
+        }
+
+
+
+        #container, html.embed{
+            background-color:transparent;
+        }
+
+        .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select{
+            background:#333333 url(../images/fieldbg.gif) repeat-x top;
+            border:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+            border-bottom:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+            border-right:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+        }
+
+        .wufoo .wufoo-dropdown .wufoo-dropdown-control{
+          background:#333333 url(../images/fieldbg.gif) repeat-x top;
+          border:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+          border-bottom:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+          border-right:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+        }
+
+        .safari .wufoo select.select{
+            font-size:100% !important;
+        }
+        .safari .wufoo input.file{
+            background:none;
+            border:none;
+        }
+
+        .wufoo li.focused{
+            background-color:transparent !important;
+        }
+
+        .wufoo .instruct {
+          background-color:#333333;
+        }
+
+        .redesigned-theme-2018 .wufoo .user-instructions small,
+        .redesigned-theme-2018 .wufoo .user-instructions:focus::after,
+        .redesigned-theme-2018 .wufoo .user-instructions:hover::after {
+          background-color:#333333;
+        }
+
+/* ----- Borders ----- */
+
+        #container{
+            border:1px solid #151515;
+        }
+
+        .redesigned-theme-2018#container {
+          border:1px solid #151515;
+        }
+
+        .wufoo .info,
+        .wufoo .paging-context{
+            border-bottom:1px dotted #cccccc;
+        }
+
+        .wufoo .section h3,
+        .wufoo .captcha,
+        #payment .paging-context{
+            border-top:1px dotted #cccccc;
+        }
+
+        .redesigned-theme-2018 .wufoo .info,
+        .redesigned-theme-2018 .wufoo .paging-context {
+            border-bottom:1px solid #151515;
+        }
+        .redesigned-theme-2018 .wufoo .section h3,
+        .redesigned-theme-2018 .wufoo .captcha,
+        .redesigned-theme-2018 #payment .paging-context {
+            border-top:1px dotted #cccccc;
+        }
+
+
+        .wufoo .instruct{
+            border:1px solid #e6e6e6;
+        }
+
+        .redesigned-theme-2018 .wufoo .user-instructions small {
+            border:1px solid #e6e6e6;
+        }
+        .redesigned-theme-2018 .wufoo .floatInstructionRight:hover::before,
+        .redesigned-theme-2018 .wufoo .floatInstructionRight:focus::before,
+        .redesigned-theme-2018 .wufoo .floatInstructionRight:hover::after,
+        .redesigned-theme-2018 .wufoo .floatInstructionRight:focus::after {
+          border-left: 1px solid #e6e6e6;
+          border-bottom: 1px solid #e6e6e6;
+        }
+        .redesigned-theme-2018 .wufoo .floatInstructionLeft:hover::before,
+        .redesigned-theme-2018 .wufoo .floatInstructionLeft:focus::before,
+        .redesigned-theme-2018 .wufoo .floatInstructionLeft:hover::after,
+        .redesigned-theme-2018 .wufoo .floatInstructionLeft:focus::after {
+          border-right: 1px solid #e6e6e6;
+          border-top: 1px solid #e6e6e6;
+        }
+
+
+        .fixed .info{
+            border-bottom:none;
+        }
+        .wufoo li.section.scrollText{
+            border-color:#dedede;
+        }
+
+/* ----- Typography ----- */
+        .wufoo .info h2 {
+            font-size:160% !important;
+            font-family:inherit;
+            font-style:normal;
+            font-weight:normal;
+            color:#ffffff !important;
+        }
+
+        .redesigned-theme-2018 .wufoo .info h2 * {
+          font-family: inherit;
+        }
+
+        .redesigned-theme-2018 .wufoo .info h2 {
+          font-size: 34px !important;
+        }
+        .redesigned-theme-2018 .wufoo .info h2 {
+          font-weight: 300 !important;
+        }
+
+        .wufoo .info div {
+            font-size:95% !important;
+            font-family:inherit;
+            font-style:normal;
+            font-weight:normal;
+            color:#eeeeee !important;
+        }
+
+        .redesigned-theme-2018 .wufoo .info div * {
+          font-family: inherit;
+        }
+
+        .redesigned-theme-2018 .wufoo .info div {
+          font-size: 26px !important;
+        }
+        .redesigned-theme-2018 .info div {
+          font-weight: 300 !important;
+        }
+
+        .wufoo .section h3 {
+            font-size:110% !important;
+            font-family:inherit;
+            font-style:normal;
+            font-weight:normal;
+            color:#ffffff !important;
+        }
+
+        .redesigned-theme-2018 .wufoo .section h3 * {
+          font-family: inherit;
+        }
+
+        .redesigned-theme-2018 .wufoo .section h3 {
+          font-size: 26px !important;
+        }
+        .redesigned-theme-2018 .wufoo .section h3 {
+          font-weight: 300 !important;
+        }
+
+        .wufoo .section div {
+            font-size:85% !important;
+            font-family:inherit;
+            font-style:normal;
+            font-weight:normal;
+            color:#eeeeee !important;
+        }
+
+        .redesigned-theme-2018 .wufoo .section div * {
+          font-family: inherit;
+        }
+
+        .redesigned-theme-2018 .wufoo .section div {
+          font-size: 18px !important;
+        }
+        .redesigned-theme-2018 .wufoo .section div {
+          font-weight: 300 !important;
+        }
+
+        .wufoo label.desc, .wufoo legend.desc, .likert caption {
+            font-size:95% !important;
+            font-family:inherit;
+            font-style:normal;
+            font-weight:bold;
+            color:#eeeeee !important;
+            text-align: left;
+        }
+
+        .redesigned-theme-2018 .wufoo li.paging-context b *,
+        .redesigned-theme-2018 .wufoo label.choice *,
+        .redesigned-theme-2018 .wufoo label.desc *,
+        .redesigned-theme-2018 .wufoo legend.desc *,
+        .redesigned-theme-2018 .likert thead td *,
+        .redesigned-theme-2018 .likert tbody label *,
+        .redesigned-theme-2018 .likert caption * {
+          font-family: inherit;
+        }
+
+        .redesigned-theme-2018 .wufoo label.desc,
+        .redesigned-theme-2018 .wufoo legend.desc,
+        .redesigned-theme-2018 .likert caption {
+          font-size: 18px !important;
+        }
+        .redesigned-theme-2018 .wufoo label.desc,
+        .redesigned-theme-2018 .wufoo legend.desc,
+        .redesigned-theme-2018 .likert caption {
+          font-weight: 300 !important;
+        }
+
+        .wufoo label.choice{
+            font-size:100% !important;
+            font-family:inherit;
+            font-style:normal;
+            font-weight:normal;
+            color:#eeeeee !important;
+        }
+
+        .redesigned-theme-2018 .wufoo li span:not(.star)  {
+            font-size: 18px !important;
+        }
+        .redesigned-theme-2018 .wufoo li div span.choice__text {
+            font-size: 15px !important;
+        }
+
+        .wufoo input.text,
+        .wufoo textarea.textarea,
+        .wufoo input.file,
+        .wufoo select.select,
+        .wufoo li .wufoo-dropdown span{
+            font-style:normal;
+            font-weight:normal;
+            color:#ffffff !important;
+            font-size:100% !important;
+        }
+
+        input {
+          display: block;
+          direction: ltr;
+        }
+
+        .redesigned-theme-2018 .wufoo li .wufoo-dropdown-menu{
+          color: #212121 !important;
+        }
+
+        .redesigned-theme-2018 .wufoo input.text,
+        .redesigned-theme-2018 .wufoo textarea.textarea,
+        .redesigned-theme-2018 .wufoo textarea.textarea::placeholder,
+        .redesigned-theme-2018 .wufoo input.file,
+        .redesigned-theme-2018 .wufoo select.select,
+        .redesigned-theme-2018 .wufoo li .wufoo-dropdown span {
+          font-size: 15px !important;
+        }
+        .redesigned-theme-2018 .wufoo input.text,
+        .redesigned-theme-2018 .wufoo textarea.textarea,
+        .redesigned-theme-2018 .wufoo input.file,
+        .redesigned-theme-2018 .wufoo select.select,
+        .redesigned-theme-2018 .wufoo li .wufoo-dropdown span {
+          font-weight: 300 !important;
+        }
+
+        {* Custom Fonts Break Dropdown Selection in IE *}
+        .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file{
+            font-family:inherit;
+        }
+
+        .redesigned-theme-2018 .wufoo input.text,
+        .redesigned-theme-2018 .wufoo textarea.textarea,
+        .redesigned-theme-2018 .wufoo input.file {
+          font-family: inherit;
+        }
+
+        .safari .wufoo select.select{
+            background:#333333 url(../images/fieldbg.gif) repeat-x top;
+            border:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+            border-bottom:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+            border-right:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+            font-size:100% !important;
+        }
+
+
+        .wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label{
+            font-family:inherit;
+            color:#eeeeee;
+        }
+        .safari .wufoo input.file{ /* Webkit */
+            font-size:100%;
+            font-family:inherit;
+            color:#eeeeee;
+        }
+        .wufoo .instruct small, .redesigned-theme-2018 .wufoo label.desc .user-instructions small{
+            font-size:80%;
+            font-family:inherit;
+            font-style:normal;
+            font-weight:normal;
+            color:#eeeeee;
+        }
+
+        .redesigned-theme-2018 .wufoo label.desc .user-instructions,
+        .redesigned-theme-2018 .wufoo legend.desc .user-instructions {
+          font-size: 15px !important;
+        }
+        .redesigned-theme-2018 .wufoo label.desc .user-instructions small,
+        .redesigned-theme-2018 .wufoo legend.desc .user-instructions small {
+          font-size: 80% !important;
+          color: #eeeeee !important;
+          font-style:normal !important;
+          font-weight: normal !important;
+          line-height: normal;
+        }
+
+        .redesigned-theme-2018 .wufoo label.desc .user-instructions small,
+        .redesigned-theme-2018 .wufoo legend.desc .user-instructions small {
+
+          font-size: 15px !important;
+        }
+        .redesigned-theme-2018 .wufoo label.desc .user-instructions small,
+        .redesigned-theme-2018 .wufoo legend.desc .user-instructions small {
+          font-weight: 300 !important;
+        }
+
+        .altInstruct small, li.leftHalf small, li.rightHalf small,
+        li.leftThird small, li.middleThird small, li.rightThird small,
+        .iphone small{
+            color:#eeeeee !important;
+        }
+
+/* ----- Button Styles ----- */
+
+        .wufoo input.btTxt{
+
+        }
+
+/* ----- Highlight Styles ----- */
+
+
+/* ----- Confirmation ----- */
+
+        .confirm h2{
+            font-family:inherit;
+            color:#eeeeee;
+        }
+        a.powertiny b, a.powertiny em{
+            color:#1a1a1a !important;
+        }
+        .embed a.powertiny b, .embed a.powertiny em{
+            color:#1a1a1a !important;
+        }
+
+/* ----- Pagination ----- */
+
+        .pgStyle1 var, .pgStyle2 var, .pgStyle2 em, .page1 .pgStyle2 var, .pgStyle1 b, .wufoo .buttons .marker{
+            font-family:inherit;
+            color:#eeeeee;
+        }
+        .pgStyle1 var, .pgStyle2 td{
+            border:1px solid #bebebe;
+        }
+        .pgStyle1 .done var{
+            background:#1a1a1a;
+            border:1px solid #1a1a1a;
+        }
+
+        .pgStyle1 .selected var, .pgStyle2 var, .pgStyle2 var em{
+            background:#d6d6d6;
+            color:#000000;
+        }
+        .pgStyle1 .selected var{
+            border:1px solid #eeeeee;
+        }
+
+        .buttons button, .buttons button:hover{
+            color:#000000;
+        }
+
+/* Likert Backgrounds */
+
+        .likert table{
+            background-color:transparent;
+        }
+        .likert thead td, .likert thead th{
+            background-color:#e6e6e6;
+        }
+        .likert tbody tr.alt td, .likert tbody tr.alt th{
+            background-color:#f5f5f5;
+        }
+
+/* Likert Borders */
+
+        .likert table, .likert th, .likert td{
+            border-color:#dedede;
+        }
+        .likert td{
+            border-left:1px solid #cccccc;
+        } 
+
+/* Likert Typography */
+
+        .likert caption, .likert thead td, .likert tbody th label{
+            color:#eeeeee;
+            font-family:inherit;
+        }
+
+
+        .likert tbody td label{
+            color:#d6d6d6;
+            font-family:inherit;
+        }
+        .likert thead td, .likert tbody tr.alt th label, .likert tbody tr.alt td label{
+            color:#000000;
+        }
+        .likert caption, .likert tbody th label{
+            font-size:95%;
+        }
+
+/* Likert Hover */
+
+        .likert tbody tr:hover td, .likert tbody tr:hover th, .likert tbody tr:hover label{
+            background-color:transparent;
+            color:#000000;
+        }
+        .likert tbody tr:hover td{
+            border-left:1px solid #cccccc;
+        }
+
+        .redesigned-theme-2018 .likert tbody tr:hover label, .redesigned-theme-2018 .likert tbody tr:hover td, .redesigned-theme-2018 .likert tbody tr:hover th {
+          color: #eeeeee;
+        }
+
+/* ----- Running Total ----- */
+
+        .wufoo #lola{
+            background:#000000;
+            background:rgba(0,0,0,0.5);
+        }
+        .wufoo #lola tbody td{
+            border-bottom:1px solid #333333;
+            border-bottom:1px solid rgba(238,238,238,0.3);
+        }
+        .wufoo #lola{
+            font-family:inherit;
+            color:#eeeeee;
+        }
+        .wufoo #lola tfoot th{
+            color:#bebebe;
+        }
+
+/* ----- Report Styles ----- */
+
+        .wufoo .wfo_graph h3{
+            font-size:95%;
+            font-family:inherit;
+            color:#eeeeee;
+        }
+        .wfo_txt, .wfo_graph h4{
+            color:#eeeeee;
+        }
+        .wufoo .footer h4{
+            color:#ffffff;
+        }
+        .wufoo .footer span{
+            color:#eeeeee;
+        }
+
+/* ----- Number Widget ----- */
+
+    .wfo_number{
+        background-color:#f5f5f5;
+        border-color:#dedede;
+    }
+    .wfo_number strong, .wfo_number em{
+        color:#000000;
+    }
+
+/* ----- Chart Widget Border and Background Colors ----- */
+
+        #widget, #widget body{
+            background:transparent;
+        }
+        .fcNav a.show{
+            background-color:transparent;
+            border-color:#cccccc;
+        }
+        .fc table{
+            border-left:1px solid #dedede;
+        }
+        .fc thead th, .fc .more th{
+            background-color:#dedede !important;
+            border-right:1px solid #cccccc !important;
+        }
+        .fc tbody td, .fc tbody th, .fc tfoot th, .fc tfoot td{
+            background-color:transparent;
+            border-right:1px solid #cccccc;
+            border-bottom:1px solid #dedede;
+        }
+        .fc tbody tr.alt td, .fc tbody tr.alt th, .fc tbody td.alt{
+            background-color:#f5f5f5;
+        }
+
+/* ----- Chart Widget Typography Colors ----- */
+
+        .fc caption, .fcNav, .fcNav a{
+            color:#eeeeee;
+        }
+        .fc tfoot,
+        .fc thead th,
+        .fc tbody th div,
+        .fc tbody td.count, .fc .cards tbody td a, .fc td.percent var,
+        .fc .timestamp span{
+            color:#000000;
+        }
+        .fc .indent .count{
+            color:#e4e4e4;
+        }
+        .fc .cards tbody td a span{
+            color:#a7a7a7;
+        }
+
+/* ----- Chart Widget Hover Colors ----- */
+
+        .fc tbody tr:hover td, .fc tbody tr:hover th,
+        .fc tfoot tr:hover td, .fc tfoot tr:hover th{
+            background-color:transparent;
+        }
+        .fc tbody tr:hover th div, .fc tbody tr:hover td, .fc tbody tr:hover var,
+        .fc tfoot tr:hover th div, .fc tfoot tr:hover td, .fc tfoot tr:hover var{
+            color:#000000;
+        }
+
+/* ----- Payment Summary ----- */
+
+        .invoice thead th,
+        .invoice tbody th, .invoice tbody td,
+        .invoice tfoot th,
+        .invoice .total,
+        .invoice tfoot .last th, .invoice tfoot .last td,
+        .invoice tfoot th, .invoice tfoot td{
+            border-color:#dedede;
+        }
+        .invoice thead th, .wufoo .checkNotice{
+            background:#f5f5f5;
+        }
+        .invoice th, .invoice td{
+            color:#000000;
+        }
+        #ppSection, #ccSection{
+            border-bottom:1px dotted #cccccc;
+        }
+        #shipSection, #invoiceSection{
+            border-top:1px dotted #cccccc;
+        }
+
+/* Drop Shadows */
+
+/* - - - Local Fonts - - - */
+
+/* - - - Responsive - - - */
+
+        @media only screen and (max-width: 480px) {
+            html{
+                background-color:transparent;
+            }
+            a.powertiny b, a.powertin em{
+                color:#1a1a1a !important;
+            }
+        }
+
+/* - - - Custom Theme - - - */
+
