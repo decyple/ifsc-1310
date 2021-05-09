@@ -1,0 +1,245 @@
+
+            
+    html {
+        height: 100%;
+        background-color: #0a0a0a;
+    }
+
+    body {
+        height: 100%;
+        background-color: #292929;
+        font-family: "Lato", sans-serif;
+    }
+            
+            
+/* ---- Page Header ---- */
+
+    header.primary {
+        background-color: black;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 2px 2px #000000;
+        position: relative;
+        border: 1px solid;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-color: #888888;
+    }
+
+    header.primary h1 a {
+        color: #ffffff;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg");    /* Original file ‎ (SVG file, nominally 332 × 41 pixels, file size: 2 KB) */
+        display: block;
+        width: 331px;
+        height: 41px;
+        margin: 0 auto;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    header.primary nav ul {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 2px;
+        background-color: #0a0a0a;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    header.primary nav a:link, header.primary nav a:visited {
+        color: white;
+        text-decoration: none;
+        background-color: #0a0a0a;
+        padding: 8px 16px;
+        border-radius: 1px;
+        transition: 0.6s;
+        display: block;
+    }
+
+    header.primary nav a:hover, header.primary nav a:active {
+        background-color: rgba(51, 83, 107, 0.8);
+        background-color: rgba(255,255,255, 0.3);
+    }
+
+    .parallax1 {
+        margin: 2px 0 0 0;
+        background-image: url("https://live.staticflickr.com/65535/51006496043_b180fc3fb4_4k.jpg");
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax2 {
+        background-image: 
+        url("https://live.staticflickr.com/65535/50631642722_5aebd032e0_4k.jpg");
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax3 {
+        background-image: url("https://live.staticflickr.com/65535/50814481952_099f983565_3k.jpg");
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax4 {
+        background-image: url("https://blogs.nasa.gov/commercialcrew/wp-content/uploads/sites/230/2020/05/KSC-20200429-PH-SPX01_0001_orig.jpg");
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .divider p {
+        background-color: #292929;
+        margin: 0 0 0 0;
+        height: 3px;
+    }
+
+    .divider p  img {
+        margin: -22px 0 0 0;
+    }
+
+    .divider {
+        color: white;
+        text-align: center;
+        opacity: 0.9;
+    }
+            
+            
+/* ---- Launch Selector ---- */
+            
+    /* ---- The frame for the buttons to go in ---- */
+    .section-launches {
+        padding-top: 20px;    /* (.section-launches.height: 250 - #animated-button.height: 180;) / 2 */
+        display: flex;
+        height: 270px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #0a0a0a;
+        justify-content: space-evenly;
+        box-shadow: inset 8px 0 50px rgba(0, 0, 0, 0.4), inset 0px 1000px 1000px rgba(47, 47, 47, 0.5);
+/*                display: none;          ---- Show/Hide the Launches section via js ---- */
+    }
+
+    /* ---- The button itself ---- */
+    #animated-button {
+        border-radius: 5px;
+        height: 180px;
+        width: 320px;
+        box-shadow: 0px 0px 30px #222;
+        opacity: 0.85;
+    }
+
+    /* ---- The button itself (on-hover) ---- */
+    #animated-button:hover {
+        margin: 0px;
+        box-shadow: inset 0px 20px 20px rgba(255, 0, 0, 1);
+        opacity: 1;
+        box-shadow: 0px 0px 0px 3px rgba(37, 38, 65, 0.6), 0px 0px 0px 10px rgba(255, 255, 255, 0.6);
+        width: 325px;
+        height: 185px;
+    }
+
+    /* ---- Launch Selector Header Text Formatting ---- */
+    .head-text {
+        color: white;
+    }
+
+    .div-launch-container {
+        color: white;
+        text-align: center;
+    }
+
+    .div-launch-container h5, .div-launch-container h6 {
+        padding-top: 5px;
+        margin: 5px;
+        color: #bababa;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    }
+            
+/* ---- JavaScript Cycle Section ---- */
+
+    .gallery {
+        background-color: #212225;
+        width: 905px;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+        border: 1px solid #999;
+        height: 745px;
+        overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+        border-radius: 6px;
+    }
+
+    .gallery img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .video-gallery {
+        background-color: #212225;
+        background-color: black;
+        width: 980px;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+        border: 1px solid #999;
+        height: 450px;
+        overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+        border-radius: 6px;
+    }
+
+    .video-gallery video {
+        height: 100%;
+        width: 100%;
+        transform: translate(-10.5%);
+    }
+
+/* ---- Footer Section ---- */
+
+    footer#colophon {
+        background-color: black;
+    }
+
+    #colophon h6 {
+        padding: 40px;
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 0.9em;
+        text-transform: uppercase;
+    }
+
+    #colophon h6 a:link,
+    #colophon h6 a:visited {
+        color: #fff;
+    }
+
+
+    .next-launch { 
+        max-height: 100% !important; 
+        top: 0;
+    }
+    
+
+    .next-launch p {
+        margin: 0px;
+    }

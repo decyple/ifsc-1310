@@ -75,84 +75,134 @@
 /* ---- Header ---- */
 
     header.primary {
-        background-color: #181c1f;
+        background-color: black;
         text-align: center;
         color: #ffffff;
         text-shadow: 2px 2px #000000;
-        padding: 6em 2em;
         position: relative;
-    }
-
-    header.primary::before {
-        content: "";
-/*        background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");*/
-        background-image: url("https://www.wallpaperpimper.com/wallpapers/m3ea82/twitter/spacex.jpg");
-        background-size: cover;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.4;
-    }
-
-    header.primary h1 {
-        font-size: 3.2rem;
-        margin: 20px 0;
-        position: relative;
+        border: 1px solid;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-color: #888888;
     }
 
     header.primary h1 a {
         color: #ffffff;
-        background-image: url("https://assets.codepen.io/7248/logo-2.png");
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg");    /* Original file ‎ (SVG file, nominally 332 × 41 pixels, file size: 2 KB) */
         display: block;
-        width: 449px;
-        height: 70px;
+        width: 331px;
+        height: 41px;
         margin: 0 auto;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
     }
 
-    header.primary h2 {
-        font-family: "Goldman", cursive;
-        font-size: 2em;
-        margin: 20px auto 40px;
-        position: relative;
-    }
-
     header.primary nav ul {
-        position: relative;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0;
-        max-width: 900px;
-        margin: 20px auto;
-    }
-
-    header.primary nav li {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 2px;
+        background-color: #0a0a0a;
+        justify-content: space-evenly;
         list-style-type: none;
-        padding: 0;
-        width: 20%;
     }
 
-    header.primary nav a:link,
-    header.primary nav a:visited {
+    header.primary nav a:link, header.primary nav a:visited {
         color: white;
         text-decoration: none;
-        background-color: #000000;
-        background-color: rgba(142, 166, 184, 0.4);
+        background-color: #0a0a0a;
         padding: 8px 16px;
-        border-radius: 2px;
+        border-radius: 1px;
         transition: 0.6s;
         display: block;
     }
 
-    header.primary nav a:hover,
-    header.primary nav a:active {
+    header.primary nav a:hover, header.primary nav a:active {
         background-color: rgba(51, 83, 107, 0.8);
+        background-color: rgba(255,255,255, 0.3);
     }
+
+/*    header.primary {*/
+/*        background-color: #181c1f;*/
+/*        text-align: center;*/
+/*        color: #ffffff;*/
+/*        text-shadow: 2px 2px #000000;*/
+/*        padding: 6em 2em;*/
+/*        position: relative;*/
+/*    }*/
+
+/*    header.primary::before {*/
+/*        content: "";*/
+/*        background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");*/
+/*        background-image: url("https://www.wallpaperpimper.com/wallpapers/m3ea82/twitter/spacex.jpg");*/
+/*        background-size: cover;*/
+/*        position: absolute;*/
+/*        top: 0px;*/
+/*        right: 0px;*/
+/*        bottom: 0px;*/
+/*        left: 0px;*/
+/*        opacity: 0.4;*/
+/*    }*/
+
+/*    header.primary h1 {*/
+/*        font-size: 3.2rem;*/
+/*        margin: 20px 0;*/
+/*        position: relative;*/
+/*    }*/
+
+/*    header.primary h1 a {*/
+/*        color: #ffffff;*/
+/*        background-image: url("https://assets.codepen.io/7248/logo-2.png");*/
+/*        display: block;*/
+/*        width: 449px;*/
+/*        height: 70px;*/
+/*        margin: 0 auto;*/
+/*        text-indent: 100%;*/
+/*        white-space: nowrap;*/
+/*        overflow: hidden;*/
+/*    }*/
+
+/*    header.primary h2 {*/
+/*        font-family: "Goldman", cursive;*/
+/*        font-size: 2em;*/
+/*        margin: 20px auto 40px;*/
+/*        position: relative;*/
+/*    }*/
+
+/*    header.primary nav ul {*/
+/*        position: relative;*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        justify-content: space-around;*/
+/*        padding: 0;*/
+/*        max-width: 900px;*/
+/*        margin: 20px auto;*/
+/*    }*/
+
+/*    header.primary nav li {*/
+/*        list-style-type: none;*/
+/*        padding: 0;*/
+/*        width: 20%;*/
+/*    }*/
+
+/*    header.primary nav a:link,*/
+/*    header.primary nav a:visited {*/
+/*        color: white;*/
+/*        text-decoration: none;*/
+/*        background-color: #000000;*/
+/*        background-color: rgba(142, 166, 184, 0.4);*/
+/*        padding: 8px 16px;*/
+/*        border-radius: 2px;*/
+/*        transition: 0.6s;*/
+/*        display: block;*/
+/*    }*/
+
+/*    header.primary nav a:hover,*/
+/*    header.primary nav a:active {*/
+/*        background-color: rgba(51, 83, 107, 0.8);*/
+/*    }*/
 
 
 /* ---- Content ---- */
@@ -376,11 +426,11 @@
 /* ---- Footer ---- */
 
     footer#colophon {
-        background-color: #1b2c38;
+        background-color: black;
     }
 
     #colophon h6 {
-        padding: 20px;
+        padding: 40px;
         margin: 0;
         color: #fff;
         text-align: center;
@@ -392,6 +442,24 @@
     #colophon h6 a:visited {
         color: #fff;
     }
+
+    /*footer#colophon {*/
+    /*    background-color: #1b2c38;*/
+    /*}*/
+
+    /*#colophon h6 {*/
+    /*    padding: 20px;*/
+    /*    margin: 0;*/
+    /*    color: #fff;*/
+    /*    text-align: center;*/
+    /*    font-size: 0.9em;*/
+    /*    text-transform: uppercase;*/
+    /*}*/
+
+    /*#colophon h6 a:link,*/
+    /*#colophon h6 a:visited {*/
+    /*    color: #fff;*/
+    /*}*/
 
 
 /* ---- Media Queries ---- */
